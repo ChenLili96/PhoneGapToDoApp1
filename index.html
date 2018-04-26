@@ -16,7 +16,7 @@
       
       		<div data-role="content">
         	
-            	<input type="text" name="textinput" id="addTaskText" value="" placeholder="New Task" />
+            	<input type="text" name="textinput" autocomplete="off" id="addTaskText" value="" placeholder="New Task" />
                 
                 <input type="button" id="addTaskButton" value="Add Task" />
                 
@@ -26,10 +26,28 @@
                 </ul> 
 
     		</div>
+            <a href="#deletepage" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Delete Task</a>
     
     	</div>
     
-		
+		<div data-role="page" id="deletepage">
+    
+      		<div data-role="content">
+                
+               <form>
+                    <div class="ui-field-contain">
+                        <label for="select">Choose one to delete</label>
+                        <select name="select" id="myselect">
+                            <option value="1">The 1st Option</option>
+                            <option value="2">The 2nd Option</option>
+                            <option value="3">The 3rd Option</option>
+                            <option value="4">The 4th Option</option>
+                        </select>
+                    </div>
+                </form>
+
+    		</div>
+            </div>
 
 </body>
 </html>
